@@ -1,0 +1,23 @@
+package com.quanlyxe.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class TuyenResponse {
+    private Long id;
+    private String maTuyen;
+    private String tenTuyen;
+    private String diemDi;
+    private String diemDen;
+    private BigDecimal khoangCachKm;
+    private BigDecimal donGia;
+    private Integer soLuongChuyen;
+}

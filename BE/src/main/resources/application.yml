@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ben-xe-danang
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:postgresql}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+  jackson:
+    time-zone: Asia/Bangkok
+
+server:
+  port: ${SERVER_PORT:8080}
+
+app:
+  cors:
+    allowed-origins: ${ALLOWED_ORIGINS:*}

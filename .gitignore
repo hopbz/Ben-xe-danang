@@ -1,0 +1,7 @@
+.env
+*.env.local
+BE/target/
+FE/node_modules/
+FE/dist/
+*.class
+*.jar
